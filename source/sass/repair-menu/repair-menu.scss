@@ -1,0 +1,24 @@
+.repair-menu {
+  display: flex;
+  width: 56px;
+  justify-content: space-between;
+  position: absolute;
+
+  top: -64px;
+  right: 56px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    border-radius: 1px;
+    top: 4px;
+    left: -20px;
+  }
+}
+
+@import "./__link/repair-menu__link.scss";

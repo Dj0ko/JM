@@ -1,0 +1,61 @@
+.repair-menu__link {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 20px;
+  }
+
+  &--repair-icon {
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      z-index: 1;
+
+      top: 10px;
+      left: 10px;
+      
+      width: 20px;
+      height: 20px;
+      background-image: url("../../../image/repair-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }  
+  }
+
+  &--repair-status-icon {
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      z-index: 1;
+
+      top: 10px;
+      left: 10px;
+      
+      width: 20px;
+      height: 20px;
+      background-image: url("../../../image/repair-status-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }  
+  }
+}
+
+.repair-menu__link span {
+  display: none;
+}

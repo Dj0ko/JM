@@ -1,0 +1,10 @@
+.main-nav {
+  display: flex;
+  width: 154px;
+  min-height: 88px;
+  margin-left: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@import "./__toggle/main-nav__toggle.scss";
