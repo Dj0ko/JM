@@ -30,9 +30,7 @@
       
       width: 20px;
       height: 20px;
-      background-image: url("../../../image/repair-icon.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
+      background: url("../../../image/repair-icon.svg") no-repeat center center;
     }  
   }
 
@@ -49,9 +47,7 @@
       
       width: 20px;
       height: 20px;
-      background-image: url("../../../image/repair-status-icon.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
+      background: url("../../../image/repair-status-icon.svg") no-repeat center center;
     }  
   }
 }

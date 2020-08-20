@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+
+  &--showing-more {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #1B1C21;
+    border: none;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 24px;
+      height: 24px;
+      background: url(../../image/pointer.svg) no-repeat center center;
+    }
+  }
+}

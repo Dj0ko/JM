@@ -2,11 +2,10 @@
   width: 40px;
   height: 40px;
 
-  background-color: #FF3E79;
-  background-image: url("../../../image/burger.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: #FF3E79 url("../../../image/burger.svg") no-repeat center center;
   
   border: none;
   border-radius: 20px;
+
+  cursor: pointer;
 }

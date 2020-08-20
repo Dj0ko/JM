@@ -1,0 +1,15 @@
+.services__title {
+  font-size: 28px;
+  line-height: 40px;
+  
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: -16px;
+    width: 4px;
+    height: 40px;
+
+    background-color: #41F6D7;
+  }
+}

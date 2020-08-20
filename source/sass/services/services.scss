@@ -1,3 +1,12 @@
 .services {
   position: relative;
+  padding-top: 24px;
 }
+
+@import "./__title/services__title.scss";
+@import "./__repair-list/services__repair-list.scss";
+@import "./__menu-list/services__menu-list.scss";
+@import "./__menu-list-item/services__menu-list-item.scss";
+@import "./__menu-item-link/services__menu-item-link.scss";
+@import "./__text/services__text.scss";
+@import "./__button/services__button.scss";

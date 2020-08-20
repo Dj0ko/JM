@@ -2,10 +2,6 @@
   display: flex;
   width: 56px;
   justify-content: space-between;
-  position: absolute;
-
-  top: -64px;
-  right: 56px;
 
   &::before {
     content: "";
