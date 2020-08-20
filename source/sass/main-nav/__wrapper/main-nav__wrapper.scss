@@ -1,0 +1,12 @@
+.main-nav__wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 152px;
+    display: flex;
+    justify-content: space-between;
+    order: 1;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}

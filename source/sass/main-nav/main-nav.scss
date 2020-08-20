@@ -1,9 +1,12 @@
 .main-nav {
   display: flex;
-  width: 154px;
   min-height: 88px;
-  justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 602px;
+  }
 }
 
-@import "./__toggle/main-nav__toggle.scss";
+@import "./__button/main-nav__button.scss";
+@import "./__wrapper/main-nav__wrapper.scss";

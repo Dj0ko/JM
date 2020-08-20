@@ -11,10 +11,23 @@
 <header class="page-header">
   <div class="container">
     <nav class="main-nav">
-      <a class="main-nav__logo">
+      <a href="index.html" class="main-nav__logo">
         <img src="image/logo.svg" class="logo-image" width="97" height="51" alt="логотип">
       </a>
-      <button type="button" class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+      <button type="button" class="button main-nav__button main-nav__button--closed">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <button type="button" class="button main-nav__button main-nav__button--phone">
+          <span class="visually-hidden">Заказать звонок</span>
+        </button>
+        <button type="button" class="button main-nav__button main-nav__button--chat">
+          <span class="visually-hidden">Обратная связь</span>
+        </button>
+        <a href="#" class="button main-nav__button main-nav__button--profile">
+          <span class="visually-hidden">Личный кабинет</span>
+        </a>
+      </div>
     </nav>
   </div>
 </header>
