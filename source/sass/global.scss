@@ -1,9 +1,10 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: $TTLakes;
-
-  width: 320px;
-  margin: 0 auto;
-  border: 1px solid blue;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1B1C21;
 }
 
 h1 {
