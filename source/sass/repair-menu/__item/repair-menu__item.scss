@@ -1,0 +1,7 @@
+.repair-menu__item {
+  width: 40px;
+  
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
+}

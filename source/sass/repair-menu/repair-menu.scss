@@ -1,7 +1,11 @@
 .repair-menu {
   display: flex;
-  width: 56px;
+  width: 96px;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 368px;
+  }
 
   &::before {
     content: "";
@@ -14,7 +18,12 @@
     border-radius: 1px;
     top: 4px;
     left: -22px;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 
+@import "./__item/repair-menu__item.scss";
 @import "./__link/repair-menu__link.scss";

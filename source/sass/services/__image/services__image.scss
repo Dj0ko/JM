@@ -13,4 +13,10 @@
     height: 208px;
     border-radius: 6px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 189px;
+    width: 532px;
+    height: 307px;
+  }
 }

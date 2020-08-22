@@ -1,3 +1,7 @@
 .services__text {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 20px;
+  }
 }

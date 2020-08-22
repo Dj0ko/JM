@@ -2,5 +2,10 @@
   position: absolute;
 
   top: -64px;
-  right: 40px;
+  right: 0;
+
+  @media (min-width: $desktop-width) {
+    top: 31px;
+    right: 8px;
+  }
 }
