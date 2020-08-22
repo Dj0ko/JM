@@ -3,4 +3,8 @@
   align-items: center;
   overflow-x: scroll;
   margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+  }
 }

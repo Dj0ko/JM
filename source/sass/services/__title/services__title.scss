@@ -11,5 +11,9 @@
     height: 40px;
 
     background-color: #41F6D7;
+
+    @media (min-width: $tablet-width) {
+      left: -24px;
+    }
   }
 }

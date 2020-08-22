@@ -1,0 +1,16 @@
+.services__image {
+  position: absolute;
+  right: 0;
+  top: 295px;
+
+  width: 320px;
+  height: 176px;
+
+  @media (min-width: $tablet-width) {
+    right: 0;
+    top: 159px;
+    width: 360px;
+    height: 208px;
+    border-radius: 6px;
+  }
+}

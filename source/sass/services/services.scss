@@ -1,6 +1,7 @@
 .services {
   position: relative;
   padding-top: 24px;
+  padding-bottom: 227px;
 }
 
 @import "./__title/services__title.scss";
@@ -8,5 +9,7 @@
 @import "./__menu-list/services__menu-list.scss";
 @import "./__menu-list-item/services__menu-list-item.scss";
 @import "./__menu-item-link/services__menu-item-link.scss";
+@import "./__text-wrapper/services__text-wrapper.scss";
 @import "./__text/services__text.scss";
 @import "./__button/services__button.scss";
+@import "./__image/services__image.scss";
