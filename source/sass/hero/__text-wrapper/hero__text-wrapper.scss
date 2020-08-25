@@ -1,17 +1,16 @@
-.services__text-wrapper {
-  width: 280px;
+.hero__text-wrapper {
+  width: auto;
   height: 90px;
-  margin-top: 24px;
   margin-bottom: 16px;
   overflow-y: hidden;
 
   @media (min-width: $tablet-width) {
-    width: 305px;
-    height: 160px;
+    height: 134px;
+    margin-right: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 480px;
-    height: 145px;
+    height: 155px;
+    margin-right: 36px;
   }
 }

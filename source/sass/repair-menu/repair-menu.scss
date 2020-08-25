@@ -1,11 +1,10 @@
 .repair-menu {
   display: flex;
   width: 96px;
+  min-height: 40px;
   justify-content: space-between;
-
-  @media (min-width: $desktop-width) {
-    width: 368px;
-  }
+  position: relative;
+  flex-shrink: 0;
 
   &::before {
     content: "";
@@ -22,6 +21,13 @@
     @media (min-width: $desktop-width) {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 368px;
+    // text-align: ;
+    top: 24px;
+    right: 32px;
   }
 }
 

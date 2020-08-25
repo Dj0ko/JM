@@ -1,44 +1,44 @@
-.main-nav__button {
-  width: 40px;
-  height: 40px;
+// .main-nav__button {
+  // width: 40px;
+  // height: 40px;
 
-  background: #FF3E79 no-repeat center center;
+  // background: #FF3E79 no-repeat center center;
   
-  border: none;
-  border-radius: 20px;
+  // border: none;
+  // border-radius: 20px;
 
-  cursor: pointer;
+  // cursor: pointer;
 
-  &--closed {
-    background-image: url("../../../image/burger.svg");
+  // &--closed {
+  //   background-image: url("/source/image/burger.svg");
 
-    @media (min-width: $tablet-width) {
-      position: relative;
+    // @media (min-width: $tablet-width) {
+    //   position: relative;
 
-      &::before {
-        content: "";
+    //   &::before {
+    //     content: "";
     
-        position: absolute;
+    //     position: absolute;
     
-        width: 2px;
-        height: 32px;
-        background-color: #eaeaea;
-        border-radius: 1px;
-        top: 4px;
-        right: -22px;
-      }
-    }
-  }
+    //     width: 2px;
+    //     height: 32px;
+    //     background-color: #eaeaea;
+    //     border-radius: 1px;
+    //     top: 4px;
+    //     right: -22px;
+    //   }
+    // }
+  // }
 
-  &--phone {
-    background-image: url("../../../image/phone.svg");
-  }
+  // &--phone {
+  //   background-image: url("/source/image/phone.svg");
+  // }
 
-  &--chat {
-    background-image: url("../../../image/chat.svg");
-  }
+  // &--chat {
+  //   background-image: url("/source/image/chat.svg");
+  // }
 
-  &--profile {
-    background-image: url("../../../image/profile.svg");
-  }
-}
+  // &--profile {
+  //   background-image: url("/source/image/profile.svg");
+  // }
+// }

@@ -5,75 +5,106 @@
   <meta charset="utf-8">
   <title>JM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/source/css/style.css" rel="stylesheet">
+  <link href="source/css/style.css" rel="stylesheet">
 </head>
 
 <header class="page-header">
-  <div class="container">
+  <div class="page-header__container container">
     <nav class="main-nav">
       <a href="index.html" class="main-nav__logo">
-        <img src="image/logo.svg" class="logo-image" width="97" height="51" alt="логотип">
+        <img src="source/image/logo.svg" class="logo-image" width="97" height="51" alt="логотип">
       </a>
-      <button type="button" class="button main-nav__button main-nav__button--closed">
+      <button type="button" class="button button--pink button--closed">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <button type="button" class="button main-nav__button main-nav__button--phone">
-          <span class="visually-hidden">Заказать звонок</span>
-        </button>
-        <button type="button" class="button main-nav__button main-nav__button--chat">
-          <span class="visually-hidden">Обратная связь</span>
-        </button>
-        <a href="#" class="button main-nav__button main-nav__button--profile">
-          <span class="visually-hidden">Личный кабинет</span>
-        </a>
-      </div>
     </nav>
+    <ul class="page-header__user-menu user-menu">
+      <button type="button" class="button button--pink button--phone">
+        <span class="visually-hidden">Заказать звонок</span>
+      </button>
+      <button type="button" class="button button--pink button--chat">
+        <span class="visually-hidden">Обратная связь</span>
+      </button>
+      <button type="button" class="button button--pink button--profile">
+        <span class="visually-hidden">Личный кабинет</span>
+      </button>
+    </ul>
+    <ul class="repair-menu">
+      <li class="repair-menu__item">
+        <a href="vk.com" class="repair-menu__link repair-menu__link--repair-icon"><span>Оставить заявку</span></a>
+      </li>
+      <li class="repair-menu__item">
+        <a href="#" class="repair-menu__link repair-menu__link--repair-status-icon"><span>Статус ремонта</span></a>
+      </li>
+    </ul>
   </div>
 </header>
 
 <main class="page-services">
-  <div class="container">
-    <section class="services">
+  <section class="services">
+    <div class="container">
       <h1 class="services__title">Услуги и сервисы</h1>
-      <ul class="services__repair-list repair-menu">
-        <li class="repair-menu__item">
-          <a href="#" class="repair-menu__link repair-menu__link--repair-icon"><span>Оставить заявку</span></a>
-        </li>
-        <li class="repair-menu__item">
-          <a href="#" class="repair-menu__link repair-menu__link--repair-status-icon"><span>Статус ремонта</span></a>
-        </li>
-      </ul>
       <ul class="services__menu-list">
         <li class="services__menu-list-item services__menu-list-item--active"><a href="#"
             class="services__menu-item-link">Ремонтируемые бренды</a>
         </li>
-        <li class="services__menu-list-item"><a href="#" class="services__menu-item-link">Ремонтируемые устройства</a>
+        <li class="services__menu-list-item">
+          <a href="#" class="services__menu-item-link">Ремонтируемые устройства</a>
         </li>
-        <li class="services__menu-list-item"><a href="#" class="services__menu-item-link">Цены на услуги</a></li>
-        <li class="services__menu-list-item"><a href="#" class="services__menu-item-link">Адреса сервисных центров</a>
+        <li class="services__menu-list-item">
+          <a href="#" class="services__menu-item-link">Цены на услуги</a>
         </li>
-        <li class="services__menu-list-item"><a href="#" class="services__menu-item-link">Специальные темы</a></li>
-        <li class="services__menu-list-item"><a href="#" class="services__menu-item-link">Отзывы</a></li>
+        <li class="services__menu-list-item">
+          <a href="#" class="services__menu-item-link">Адреса сервисных центров</a>
+        </li>
+        <li class="services__menu-list-item">
+          <a href="#" class="services__menu-item-link">Специальные темы</a>
+        </li>
+        <li class="services__menu-list-item">
+          <a href="#" class="services__menu-item-link">Отзывы</a>
+        </li>
       </ul>
-      <div class="services__text-wrapper">
-        <p class="services__text">
-          Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать
-          свой ноутбук Dell с официальной гарантией производителя.
-        </p>
-        <p class="services__text">
-          Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество
-          постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
-          родным и близким.
-        </p>
+    </div>
+    <article class="hero hero--position">
+      <div class="hero__container container">
+        <div class="hero__text-wrapper">
+          <p class="hero__text">
+            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать
+            свой ноутбук Dell с официальной гарантией производителя.
+          </p>
+          <p class="hero__text">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+            количество
+            постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
+            родным и близким.
+          </p>
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur.
+          </p>
+        </div>
+        <button type="button" class="hero__button button button--showing-more">Читать далее</button>
       </div>
-      <button type="button" class="services__button button button--showing-more">Читать далее</button>
-      <img src="./image/intro-image.jpg" class="services__image" width="320" height="176" alt="фотография вывески">
-    </section>
-  </div>
+      <div class="hero__image"></div>
+    </article>
+  </section>
 </main>
 
+<script>
+  const btnShowingMore = document.querySelector('.button--showing-more'),
+    heroTextWrapper = document.querySelector('.hero__text-wrapper')
 
+  btnShowingMore.addEventListener('click', function () {
+    heroTextWrapper.style.height = 'auto';
+    btnShowingMore.style.display = 'none';
+  })
+</script>
 </body>
 
 </html>

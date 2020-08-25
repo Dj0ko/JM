@@ -1,7 +1,6 @@
 .page-header {
   background-color: #ffffff;
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
+
+@import "./__container/page-header__container.scss";
+@import "./__user-menu/page-header__user-menu.scss";

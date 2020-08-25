@@ -1,12 +1,14 @@
-.main-nav__wrapper {
+.user-menu {
   display: none;
 
   @media (min-width: $tablet-width) {
     width: 152px;
     display: flex;
     justify-content: space-between;
-    order: 1;
-    margin-left: auto;
-    margin-right: 20px;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
