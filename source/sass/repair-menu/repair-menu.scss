@@ -3,7 +3,6 @@
   width: 96px;
   min-height: 40px;
   justify-content: space-between;
-  position: relative;
   flex-shrink: 0;
 
   &::before {
@@ -25,10 +24,6 @@
 
   @media (min-width: $desktop-width) {
     width: 368px;
-    position: absolute;
-    z-index: 1;
-    top: 31px;
-    right: 32px;
   }
 }
 
