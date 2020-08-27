@@ -68,4 +68,12 @@
   &--profile {
     background-image: url("/source/image/profile.svg");
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

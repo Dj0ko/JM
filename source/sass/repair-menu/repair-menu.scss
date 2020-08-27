@@ -25,8 +25,9 @@
 
   @media (min-width: $desktop-width) {
     width: 368px;
-    // text-align: ;
-    top: 24px;
+    position: absolute;
+    z-index: 1;
+    top: 31px;
     right: 32px;
   }
 }

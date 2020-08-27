@@ -1,24 +1,46 @@
-.repair-menu__link { 
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: #FF3E79 no-repeat center center;
-  border: none;
-  border-radius: 20px;
+.repair-menu__link {
+  position: relative; 
+  &:hover {
+    opacity: 0.7;
+  }
 
-  cursor: pointer;
+  &:active {
+    opacity: 0.3;
+  }
 
   &--repair-icon {
-    background-image: url("/source/image/repair-icon.svg");
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: #FF3E79 url("/source/image/repair-icon.svg") no-repeat center center;
+      border: none;
+      border-radius: 20px;
+
+      @media (min-width: $desktop-width) {
+        top: -10px;
+        right: -47px;
+      }
+    }
   }
 
   &--repair-status-icon {
-    background-image: url("/source/image/repair-status-icon.svg");
-  }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: #FF3E79 url("/source/image/repair-status-icon.svg") no-repeat center center;
+      border: none;
+      border-radius: 20px;
 
-  // @media (min-width: $desktop-width) {
-  //   margin-left: auto;
-  // }
+      @media (min-width: $desktop-width) {
+        top: -10px;
+        right: -47px;
+      }
+    }
+  }
 } 
 
 
@@ -30,6 +52,6 @@
     line-height: 24px;
     font-weight: 500;
     display: inline;
-    margin-left: -140px;
+    color: #1B1C21;
   }
 }
