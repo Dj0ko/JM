@@ -1,7 +1,7 @@
 .hero__image {
   width: 320px;
   height: 176px;
-  background: url("/source/image/intro-image.jpg") no-repeat;
+  background: url("./source/image/intro-image.jpg") no-repeat;
   background-size: cover;
 
   @media (min-width: $tablet-width) {

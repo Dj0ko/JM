@@ -20,7 +20,7 @@
 
       width: 24px;
       height: 24px;
-      background: url("/source/image/pointer.svg") no-repeat center center;
+      background: url("./source/image/pointer.svg") no-repeat center center;
     }
   }
 
@@ -37,7 +37,7 @@
   }
 
   &--closed {
-    background-image: url("../../source/image/burger.svg");
+    background-image: url("./source/image/burger.svg");
 
     @media (min-width: $tablet-width) {
       position: relative;
@@ -58,15 +58,15 @@
   }
 
   &--phone {
-    background-image: url("../../source/image/phone.svg");
+    background-image: url("./source/image/phone.svg");
   }
 
   &--chat {
-    background-image: url("../../source/image/chat.svg");
+    background-image: url("./source/image/chat.svg");
   }
 
   &--profile {
-    background-image: url("../../source/image/profile.svg");
+    background-image: url("./source/image/profile.svg");
   }
 
   &:hover {
