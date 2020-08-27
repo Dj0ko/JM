@@ -73,6 +73,15 @@ ul {
   margin-right: 40px;
   margin-left: auto; }
 
+.page-header__repair-menu {
+  position: relative; }
+  @media (min-width: 1120px) {
+    .page-header__repair-menu {
+      position: absolute;
+      z-index: 1;
+      top: 31px;
+      right: 32px; } }
+
 .main-nav {
   display: flex;
   min-height: 88px;
@@ -168,7 +177,6 @@ ul {
   width: 96px;
   min-height: 40px;
   justify-content: space-between;
-  position: relative;
   flex-shrink: 0; }
   .repair-menu::before {
     content: "";
@@ -184,11 +192,7 @@ ul {
         display: none; } }
   @media (min-width: 1120px) {
     .repair-menu {
-      width: 368px;
-      position: absolute;
-      z-index: 1;
-      top: 31px;
-      right: 32px; } }
+      width: 368px; } }
 
 .repair-menu__item {
   width: 40px; }
