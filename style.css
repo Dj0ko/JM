@@ -104,6 +104,7 @@ ul {
   left: 0;
   z-index: 1;
   width: 100%;
+  height: 100vh;
   padding: 0 16px;
   padding-bottom: 32px;
   font-size: 16px;
@@ -189,8 +190,12 @@ ul {
   width: 87px;
   justify-content: space-between; }
 
-.main-nav__lang-list-item--active {
-  color: #7E7E82; }
+.main-nav__button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase; }
+  .main-nav__button--active {
+    color: #7E7E82; }
 
 .logo-image {
   width: 97px;
