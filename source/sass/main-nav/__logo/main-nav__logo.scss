@@ -1,8 +1,12 @@
 .main-nav__logo {
-  order: 1;
   margin-left: 17px;
 
   @media (min-width: $tablet-width) {
     margin-left: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-left: 0;
   }
 }

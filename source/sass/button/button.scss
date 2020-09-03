@@ -7,7 +7,7 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    color: #1B1C21;
+    color: inherit;
     border: none;
     background-color: transparent;
 
@@ -37,6 +37,7 @@
   }
 
   &--closed {
+    order: -1;
     background-image: url("./source/image/burger.svg");
 
     @media (min-width: $tablet-width) {
@@ -55,6 +56,24 @@
         right: -22px;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--opened {
+    order: -1;
+    background-image: url("./source/image/cross.svg");
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--search {
+    margin-left: auto;
+    background-image: url("./source/image/search.svg");
   }
 
   &--phone {

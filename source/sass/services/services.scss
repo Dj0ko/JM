@@ -9,6 +9,13 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 150px;
   }
+
+  &--position {
+    @media (min-width: $desktop-width) {
+      margin-left: 320px;
+      margin-top: -88px;
+    }
+  }
 }
 
 @import "./__title/services__title.scss";
