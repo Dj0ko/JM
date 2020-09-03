@@ -56,11 +56,19 @@
         right: -22px;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 
   &--opened {
     order: -1;
     background-image: url("./source/image/cross.svg");
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 
   &--search {
