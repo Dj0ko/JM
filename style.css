@@ -25,6 +25,7 @@ body {
   color: #1B1C21; }
 
 h1,
+h2,
 p,
 button {
   margin: 0;
@@ -92,6 +93,41 @@ ul {
   @media (min-width: 1440px) {
     .page-header__repair-menu {
       margin-top: 14px; } }
+
+.title--first {
+  position: relative;
+  font-size: 28px;
+  line-height: 40px; }
+  .title--first::before {
+    content: "";
+    position: absolute;
+    left: -17px;
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-radius: 2px; }
+    @media (min-width: 768px) {
+      .title--first::before {
+        left: -25px; } }
+    @media (min-width: 1440px) {
+      .title--first::before {
+        left: -33px; } }
+
+.title--second {
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #7E7E82;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%); }
+  @media (min-width: 768px) {
+    .title--second {
+      padding-left: 24px; } }
+  @media (min-width: 1440px) {
+    .title--second {
+      padding-left: 32px; } }
 
 .main-nav {
   display: flex;
@@ -232,25 +268,6 @@ ul {
       margin-left: 320px;
       margin-top: -88px; } }
 
-.services__title {
-  position: relative;
-  font-size: 28px;
-  line-height: 40px; }
-  .services__title::before {
-    content: "";
-    position: absolute;
-    left: -17px;
-    width: 4px;
-    height: 40px;
-    background-color: #41F6D7;
-    border-radius: 2px; }
-    @media (min-width: 768px) {
-      .services__title::before {
-        left: -25px; } }
-    @media (min-width: 1440px) {
-      .services__title::before {
-        left: -33px; } }
-
 .services__menu-list {
   display: flex;
   align-items: center;
@@ -337,7 +354,9 @@ ul {
   display: inline-block;
   cursor: pointer; }
   .button--showing-more {
+    position: relative;
     font-family: inherit;
+    padding-left: 32px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
@@ -442,7 +461,6 @@ ul {
 
 .hero__button {
   position: relative;
-  padding-left: 32px;
   margin-bottom: 16px; }
 
 .hero__image {
@@ -460,3 +478,29 @@ ul {
     .hero__image {
       width: 532px;
       height: 307px; } }
+
+.brand-repair__list {
+  display: flex;
+  overflow-x: auto; }
+
+.brand-repair__item {
+  background-color: #ffffff;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  margin-right: 16px; }
+
+.brand-repair__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 72px;
+  padding: 0 16px;
+  box-sizing: border-box; }
+  .brand-repair__link::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    background: url("./source/image/direct-circle.svg") no-repeat; }

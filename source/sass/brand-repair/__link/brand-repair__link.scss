@@ -1,0 +1,20 @@
+.brand-repair__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 72px;
+  padding: 0 16px;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    right: 16px;
+
+    width: 40px;
+    height: 40px;
+    background: url('./source/image/direct-circle.svg') no-repeat;
+  }
+}
