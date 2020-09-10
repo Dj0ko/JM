@@ -3,7 +3,9 @@
   cursor: pointer;
 
   &--showing-more {
+    position: relative;
     font-family: inherit;
+    padding-left: 32px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
@@ -21,6 +23,39 @@
       width: 24px;
       height: 24px;
       background: url("./source/image/pointer.svg") no-repeat center center;
+    }
+  }
+
+  &--closing-more {
+    position: relative;
+    font-family: inherit;
+    padding-left: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: inherit;
+    border: none;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(180deg);
+
+      width: 24px;
+      height: 24px;
+      background: url("./source/image/pointer.svg") no-repeat center center;
+    }
+  }
+
+  &--display-none {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline-block;
     }
   }
 
