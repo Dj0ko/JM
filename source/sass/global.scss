@@ -42,14 +42,18 @@ ul {
   overflow: hidden;
 }
 
-// .swiper-container {
-//   width: auto;
-//   height: 110px;
+.swiper-container {
+  width: auto;
+  height: 110px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-//   @media (min-width: $tablet-width) {
-//     height: 160px;
-//   }
-// }
+  @media (min-width: $tablet-width) {
+    height: 160px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+}
 
 .swiper-wrapper {
   @media (min-width: $tablet-width) {

@@ -53,6 +53,17 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.swiper-container {
+  width: auto;
+  height: 110px;
+  padding-top: 16px;
+  padding-bottom: 16px; }
+  @media (min-width: 768px) {
+    .swiper-container {
+      height: 160px;
+      padding-top: 24px;
+      padding-bottom: 16px; } }
+
 @media (min-width: 768px) {
   .swiper-wrapper {
     flex-wrap: wrap;
@@ -403,11 +414,6 @@ ul {
       width: 24px;
       height: 24px;
       background: url("./source/image/pointer.svg") no-repeat center center; }
-  .button--display-none {
-    display: none; }
-    @media (min-width: 768px) {
-      .button--display-none {
-        display: inline-block; } }
   .button--pink {
     width: 40px;
     height: 40px;
@@ -543,3 +549,9 @@ ul {
   @media (min-width: 1120px) {
     .brand-repair__link {
       width: 240px; } }
+
+.brand-repair__button {
+  display: none; }
+  @media (min-width: 768px) {
+    .brand-repair__button {
+      display: inline-block; } }
