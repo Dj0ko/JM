@@ -3,11 +3,13 @@
   cursor: pointer;
 
   &--showing-more {
+    position: relative;
     font-family: inherit;
+    padding-left: 32px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    color: #1B1C21;
+    color: inherit;
     border: none;
     background-color: transparent;
 
@@ -17,6 +19,31 @@
       position: absolute;
       top: 0;
       left: 0;
+
+      width: 24px;
+      height: 24px;
+      background: url("./source/image/pointer.svg") no-repeat center center;
+    }
+  }
+
+  &--closing-more {
+    position: relative;
+    font-family: inherit;
+    padding-left: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: inherit;
+    border: none;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(180deg);
 
       width: 24px;
       height: 24px;
@@ -37,6 +64,7 @@
   }
 
   &--closed {
+    order: -1;
     background-image: url("./source/image/burger.svg");
 
     @media (min-width: $tablet-width) {
@@ -55,6 +83,24 @@
         right: -22px;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--opened {
+    order: -1;
+    background-image: url("./source/image/cross.svg");
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--search {
+    margin-left: auto;
+    background-image: url("./source/image/search.svg");
   }
 
   &--phone {
