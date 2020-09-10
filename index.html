@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>JM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link href="style.css" rel="stylesheet">
 </head>
 
@@ -136,87 +138,122 @@
       </div>
       <div class="hero__image"></div>
     </article>
-    <section class="brand-repair">
+    <section class="swiper brand-repair">
       <h2 class="title title--second">Ремонт техники различных брендов</h2>
       <div class="container">
-        <ul class="brand-repair__list">
-          <li class="brand-repair__item">
-            <a href="#" class="brand-repair__link">
-              <img src="source/image/lenovo.png" class="brand-repair__image" width="108" height="32" alt="Lenovo">
-            </a>
-          </li>
-          <li class="brand-repair__item">
-            <a href="#" class="brand-repair__link">
-              <img src="source/image/samsung.png" class="brand-repair__image" width="116" height="39" alt="Samsung">
-            </a>
-          </li>
-          <li class="brand-repair__item">
-            <a href="#" class="brand-repair__link">
-              <img src="source/image/apple.png" class="brand-repair__image" width="44" height="44" alt="Apple">
-            </a>
-          </li>
-          <li class="brand-repair__item">
-            <a href="#" class="brand-repair__link">
-              <img src="source/image/viewsonic.png" class="brand-repair__image" width="128" height="21" alt="Viewsonic">
-            </a>
-          </li>
-          <li class="brand-repair__item">
-            <a href="#" class="brand-repair__link">
-              <img src="source/image/bosch.png" class="brand-repair__image" width="128" height="29" alt="Bosch">
-            </a>
-          </li>
-          <li class="brand-repair__item">
-            <a href="#" class="brand-repair__link">
-              <img src="source/image/hp.png" class="brand-repair__image" width="52" height="52" alt="Hp">
-            </a>
-          </li>
-          <li class="brand-repair__item">
-            <a href="#" class="brand-repair__link">
-              <img src="source/image/acer.png" class="brand-repair__image" width="94" height="24" alt="Acer">
-            </a>
-          </li>
-          <li class="brand-repair__item">
-            <a href="#" class="brand-repair__link">
-              <img src="source/image/sony.png" class="brand-repair__image" width="128" height="26" alt="Sony">
-            </a>
-          </li>
-          <li class="brand-repair__item">
-            <a href="#" class="brand-repair__link">
-              <img src="source/image/lenovo.png" class="brand-repair__image" width="108" height="32" alt="Lenovo">
-            </a>
-          </li>
-          <li class="brand-repair__item">
-            <a href="#" class="brand-repair__link">
-              <img src="source/image/samsung.png" class="brand-repair__image" width="116" height="39" alt="Samsung">
-            </a>
-          </li>
-          <li class="brand-repair__item">
-            <a href="#" class="brand-repair__link">
-              <img src="source/image/apple.png" class="brand-repair__image" width="44" height="44" alt="Apple">
-            </a>
-          </li>
-        </ul>
-        <button class="brand-repair__button button button--showing-more">Показать всё</button>
+        <div class="swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#" class="brand-repair__link">
+                <img src="source/image/lenovo.png" class="brand-repair__image" width="108" height="32" alt="Lenovo">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="brand-repair__link">
+                <img src="source/image/samsung.png" class="brand-repair__image" width="116" height="39" alt="Samsung">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="brand-repair__link">
+                <img src="source/image/apple.png" class="brand-repair__image" width="44" height="44" alt="Apple">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="brand-repair__link">
+                <img src="source/image/viewsonic.png" class="brand-repair__image" width="128" height="21"
+                  alt="Viewsonic">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="brand-repair__link">
+                <img src="source/image/bosch.png" class="brand-repair__image" width="128" height="29" alt="Bosch">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="brand-repair__link">
+                <img src="source/image/hp.png" class="brand-repair__image" width="52" height="52" alt="Hp">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="brand-repair__link">
+                <img src="source/image/acer.png" class="brand-repair__image" width="94" height="24" alt="Acer">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="brand-repair__link">
+                <img src="source/image/sony.png" class="brand-repair__image" width="128" height="26" alt="Sony">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="brand-repair__link">
+                <img src="source/image/lenovo.png" class="brand-repair__image" width="108" height="32" alt="Lenovo">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="brand-repair__link">
+                <img src="source/image/samsung.png" class="brand-repair__image" width="116" height="39" alt="Samsung">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#" class="brand-repair__link">
+                <img src="source/image/apple.png" class="brand-repair__image" width="44" height="44" alt="Apple">
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        <button class="brand-repair__button button button--showing-more button--display-none">Показать всё</button>
       </div>
     </section>
   </section>
 </main>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-  const btnShowingMore = document.querySelector('.button--showing-more'),
+  const heroBtn = document.querySelector('.hero__button'),
+    brandRepairBtn = document.querySelector('.brand-repair__button'),
     heroTextWrapper = document.querySelector('.hero__text-wrapper'),
     mainNavMenuWrapper = document.querySelector('.main-nav__menu-wrapper'),
     buttonClosed = document.querySelector('.button--closed'),
-    buttonOpened = document.querySelector('.button--opened');
+    buttonOpened = document.querySelector('.button--opened'),
+    swiperContainer = document.querySelector('.swiper-container');
 
-  function openMore() {
-    btnShowingMore.addEventListener('click', function () {
-      heroTextWrapper.style.height = 'auto';
-      btnShowingMore.style.display = 'none';
+  function toggleTextHeight() {
+    heroBtn.addEventListener('click', function () {
+      if (heroBtn.classList.contains('button--showing-more')) {
+        heroTextWrapper.style.height = 'auto';
+        heroBtn.classList.remove('button--showing-more');
+        heroBtn.classList.add('button--closing-more');
+        heroBtn.textContent = 'Скрыть';
+      } else {
+        heroTextWrapper.style.height = '90px';
+        heroBtn.classList.remove('button--closing-more');
+        heroBtn.classList.add('button--showing-more');
+        heroBtn.textContent = 'Читать далее';
+      }
     });
   }
 
-  openMore();
+  toggleTextHeight();
+
+  function toggleBrandHeight() {
+    brandRepairBtn.addEventListener('click', function () {
+      if (brandRepairBtn.classList.contains('button--showing-more')) {
+        swiperContainer.style.height = 'auto';
+        brandRepairBtn.classList.remove('button--showing-more');
+        brandRepairBtn.classList.add('button--closing-more');
+        brandRepairBtn.textContent = 'Скрыть';
+      } else {
+        swiperContainer.style.height = '160px';
+        brandRepairBtn.classList.remove('button--closing-more');
+        brandRepairBtn.classList.add('button--showing-more');
+        brandRepairBtn.textContent = 'Читать далее';
+      }
+    });
+  }
+
+  toggleBrandHeight();
 
   function toggleMenu() {
     buttonClosed.addEventListener('click', function () {
@@ -238,6 +275,19 @@
   }
 
   toggleMenu();
+
+  if (window.innerWidth < 768) {
+    let mySwiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  }
+
+
 </script>
 </body>
 

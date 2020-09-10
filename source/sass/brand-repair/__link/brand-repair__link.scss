@@ -6,6 +6,10 @@
   height: 72px;
   padding: 0 16px;
   box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  margin-right: 16px;
 
   &::after {
     content: "";
@@ -16,5 +20,15 @@
     width: 40px;
     height: 40px;
     background: url('./source/image/direct-circle.svg') no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 224px;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 1120px) {
+    width: 240px;
   }
 }

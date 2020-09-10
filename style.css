@@ -53,6 +53,18 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+@media (min-width: 768px) {
+  .swiper-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+
+.swiper-slide {
+  flex-shrink: 1; }
+  @media (min-width: 768px) {
+    .swiper-slide {
+      width: auto;
+      height: auto; } }
+
 .container {
   padding: 0 16px;
   box-sizing: border-box; }
@@ -114,6 +126,7 @@ ul {
         left: -33px; } }
 
 .title--second {
+  padding: 16px 0;
   padding-left: 16px;
   font-size: 16px;
   line-height: 24px;
@@ -121,7 +134,7 @@ ul {
   color: #7E7E82;
   text-transform: uppercase;
   letter-spacing: -0.2px;
-  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%); }
+  background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%); }
   @media (min-width: 768px) {
     .title--second {
       padding-left: 24px; } }
@@ -371,6 +384,30 @@ ul {
       width: 24px;
       height: 24px;
       background: url("./source/image/pointer.svg") no-repeat center center; }
+  .button--closing-more {
+    position: relative;
+    font-family: inherit;
+    padding-left: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: inherit;
+    border: none;
+    background-color: transparent; }
+    .button--closing-more::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(180deg);
+      width: 24px;
+      height: 24px;
+      background: url("./source/image/pointer.svg") no-repeat center center; }
+  .button--display-none {
+    display: none; }
+    @media (min-width: 768px) {
+      .button--display-none {
+        display: inline-block; } }
   .button--pink {
     width: 40px;
     height: 40px;
@@ -479,16 +516,6 @@ ul {
       width: 532px;
       height: 307px; } }
 
-.brand-repair__list {
-  display: flex;
-  overflow-x: auto; }
-
-.brand-repair__item {
-  background-color: #ffffff;
-  border: 1px solid #EAEAEA;
-  border-radius: 6px;
-  margin-right: 16px; }
-
 .brand-repair__link {
   position: relative;
   display: flex;
@@ -496,7 +523,11 @@ ul {
   width: 240px;
   height: 72px;
   padding: 0 16px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  margin-right: 16px; }
   .brand-repair__link::after {
     content: "";
     position: absolute;
@@ -504,3 +535,11 @@ ul {
     width: 40px;
     height: 40px;
     background: url("./source/image/direct-circle.svg") no-repeat; }
+  @media (min-width: 768px) {
+    .brand-repair__link {
+      width: 224px;
+      margin-right: 0;
+      margin-bottom: 16px; } }
+  @media (min-width: 1120px) {
+    .brand-repair__link {
+      width: 240px; } }
