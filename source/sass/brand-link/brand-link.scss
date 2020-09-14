@@ -1,4 +1,4 @@
-.brand-repair__link {
+.brand-link {
   position: relative;
   display: flex;
   align-items: center;
@@ -9,7 +9,6 @@
   background-color: #ffffff;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
-  margin-right: 16px;
 
   &::after {
     content: "";
@@ -24,11 +23,9 @@
 
   @media (min-width: $tablet-width) {
     width: 224px;
-    margin-right: 0;
-    margin-bottom: 16px;
   }
 
-  @media (min-width: 1120px) {
+  @media (min-width: $desktop-width) {
     width: 240px;
   }
 }

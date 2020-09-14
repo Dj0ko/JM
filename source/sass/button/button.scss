@@ -84,7 +84,7 @@
       }
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $full-width) {
       display: none;
     }
   }
@@ -93,7 +93,7 @@
     order: -1;
     background-image: url("./source/image/cross.svg");
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $full-width) {
       display: none;
     }
   }

@@ -17,7 +17,7 @@
   &--closed {
     display: none;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $full-width) {
       display: flex;
     }
   }
